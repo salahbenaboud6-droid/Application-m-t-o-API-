@@ -45,6 +45,7 @@ weather-app/
 ├── app.js       # Logique et appels API
 └── README.md
 ```
+<img width="481" height="449" alt="image" src="https://github.com/user-attachments/assets/afc94d90-01a1-41e7-83c1-117ebd2d04bd" />
 
 ## Concepts abordés
 
