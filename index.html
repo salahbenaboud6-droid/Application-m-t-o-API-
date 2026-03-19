@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Météo App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="container">
+    <h1>🌤 Météo</h1>
+
+    <div class="search-bar">
+      <input
+        type="text"
+        id="cityInput"
+        placeholder="Entrez une ville..."
+        aria-label="Nom de la ville"
+      />
+      <button id="searchBtn" aria-label="Rechercher">Rechercher</button>
+    </div>
+
+    <div id="error" class="error hidden" role="alert"></div>
+
+    <div id="weatherCard" class="weather-card hidden" aria-live="polite">
+      <h2 id="cityName"></h2>
+      <p id="description" class="description"></p>
+      <div class="stats">
+        <div class="stat">
+          <span class="label">🌡 Température</span>
+          <span id="temp" class="value"></span>
+        </div>
+        <div class="stat">
+          <span class="label">💧 Humidité</span>
+          <span id="humidity" class="value"></span>
+        </div>
+        <div class="stat">
+          <span class="label">💨 Vent</span>
+          <span id="wind" class="value"></span>
+        </div>
+        <div class="stat">
+          <span class="label">🌡 Ressenti</span>
+          <span id="feelsLike" class="value"></span>
+        </div>
+      </div>
+    </div>
+
+    <div id="loader" class="loader hidden" aria-label="Chargement..."></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
